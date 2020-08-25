@@ -1,5 +1,8 @@
 package baseClass;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,10 +20,14 @@ import java.io.IOException;
 
 public class UITestBaseClass {
     public WebDriver driver;
+    ExtentReports report;
+    ExtentTest test;
 
     @BeforeMethod
     @Parameters("browser")
     public void startUpBrowser(String browser){
+        startReporting();
+        testName("Google search on " + browser +  " browser");
 
         if(browser.matches("Chrome")){
             System.out.println("browser is: " + browser);
@@ -41,6 +48,8 @@ public class UITestBaseClass {
         Assert.assertEquals(actualTitle, "Google");
     }
 
+
+
     @AfterMethod(alwaysRun = true)
     @Parameters("browser")
     public void closeBrowser(String browser) throws IOException {
@@ -49,7 +58,18 @@ public class UITestBaseClass {
         }else{
             Runtime.getRuntime().exec("taskkill /f /im opera.exe");
         }
+
         System.out.println("Closing down the browser");
+        report.endTest(test);
+        report.flush();
+    }
+
+    public void testName(String testName){
+        test = report.startTest(testName);
+    }
+
+    public void startReporting(){
+        report = new ExtentReports("C:\\Users\\Alina\\Desktop\\AutomationSolution2\\src\\test\\Reports\\report.html", false);
     }
 
     public WebElement returnVisibleElementByName(String selector){
@@ -66,8 +86,14 @@ public class UITestBaseClass {
         return element;
     }
 
-
     public void verifyRedirection(String selector){
-        Assert.assertTrue(returnVisibleElementById(selector).isDisplayed());
+        boolean isDisplayed = returnVisibleElementById(selector).isDisplayed();
+        Assert.assertTrue(isDisplayed);
+
+        if(isDisplayed){
+            test.log(LogStatus.PASS, "Redirection: successful");
+        }else {
+            test.log(LogStatus.FAIL, "Redirection: failed");
+        }
     }
 }

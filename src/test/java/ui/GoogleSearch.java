@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+
 public class GoogleSearch extends UITestBaseClass {
     String text = "sometext";
 
@@ -15,5 +16,6 @@ public class GoogleSearch extends UITestBaseClass {
         searchInput.sendKeys(text);
         searchInput.sendKeys(Keys.ENTER);
         verifyRedirection("result-stats");
+
     }
 }
