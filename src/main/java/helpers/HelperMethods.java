@@ -1,23 +1,22 @@
-package ui;
+package helpers;
 
-import UITestBaseClass;
+import baseSetup.UITestBaseClass;
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.Assert;
 
-public class helperMethods extends UITestBaseClass{
+public class HelperMethods extends UITestBaseClass {
+
     public WebElement returnVisibleElementByName(String selector){
-        WebDriverWait wait = new WebDriverWait(driver, 25);
-        WebElement element = wait.until(
+        WebElement element = wait.until( //NullPointerException for WebDriverWait
                 ExpectedConditions.visibilityOfElementLocated(By.name(selector)));
         return element;
     }
 
     public WebElement returnVisibleElementById(String selector){
-        WebDriverWait wait = new WebDriverWait(driver, 25);
         WebElement element = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.id(selector)));
         return element;

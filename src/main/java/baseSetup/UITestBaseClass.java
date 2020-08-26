@@ -1,11 +1,8 @@
-package baseClass;
+package baseSetup;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -21,7 +18,8 @@ import java.io.IOException;
 public class UITestBaseClass {
     public WebDriver driver;
     ExtentReports report;
-    ExtentTest test;
+    public ExtentTest test;
+    public WebDriverWait wait;
 
     @BeforeMethod
     @Parameters("browser")
@@ -42,13 +40,16 @@ public class UITestBaseClass {
             System.setProperty("webdriver.opera.driver", "E:\\Automation\\drivers\\operadriver.exe");
             driver = new OperaDriver();
         }
-
-        driver.get("https://google.com");
-        String actualTitle = driver.getTitle();
-        Assert.assertEquals(actualTitle, "Google");
+        wait = new WebDriverWait(driver, 25);
     }
 
+    public void open(String url, String title){
+        driver.get(url);
 
+        wait.until(ExpectedConditions.titleIs(title));
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, title);
+    }
 
     @AfterMethod(alwaysRun = true)
     @Parameters("browser")
@@ -70,30 +71,5 @@ public class UITestBaseClass {
 
     public void startReporting(){
         report = new ExtentReports("C:\\Users\\Alina\\Desktop\\AutomationSolution2\\src\\test\\Reports\\report.html", false);
-    }
-
-    public WebElement returnVisibleElementByName(String selector){
-        WebDriverWait wait = new WebDriverWait(driver, 25);
-        WebElement element = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.name(selector)));
-        return element;
-    }
-
-    public WebElement returnVisibleElementById(String selector){
-        WebDriverWait wait = new WebDriverWait(driver, 25);
-        WebElement element = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.id(selector)));
-        return element;
-    }
-
-    public void verifyRedirection(String selector){
-        boolean isDisplayed = returnVisibleElementById(selector).isDisplayed();
-        Assert.assertTrue(isDisplayed);
-
-        if(isDisplayed){
-            test.log(LogStatus.PASS, "Redirection: successful");
-        }else {
-            test.log(LogStatus.FAIL, "Redirection: failed");
-        }
     }
 }
