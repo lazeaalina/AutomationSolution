@@ -1,21 +1,23 @@
-package ui;
+package pages;
 
-import baseClass.UITestBaseClass;
+import baseSetup.UITestBaseClass;
+import helpers.HelperMethods;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-
 public class GoogleSearch extends UITestBaseClass {
     String text = "sometext";
+    String url = "https://google.com";
+    HelperMethods helpers = new HelperMethods();
 
     @Test
     public void searchForText() {
+        open(url,"Google");
 
-        WebElement searchInput = returnVisibleElementByName("q" );
+        WebElement searchInput = helpers.returnVisibleElementByName("q" );
         searchInput.sendKeys(text);
         searchInput.sendKeys(Keys.ENTER);
-        verifyRedirection("result-stats");
-
+        helpers.verifyRedirection("result-stats");
     }
 }

@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2c09e87-37b7-4e5d-8199-40a2256a8c16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/GoogleSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/AutomationSolution2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutomationSolution2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseClass/UITestBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseClass/UITestBaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/GoogleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/GoogleSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseSetup/UITestBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseSetup/UITestBaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/runner/tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runner/tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/selectors/Selectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selectors/Selectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/baseClass/UITestBaseClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ui/GoogleSearch.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,38 +23,56 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/runner/tests.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/selectors/Selectors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseSetup/UITestBaseClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2380#2381#0" expanded="true" />
+                <element signature="e#2429#2430#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/tests.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/baseClass/UITestBaseClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2194#2195#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/GoogleSearch.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -68,6 +86,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/origin/master" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,6 +99,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ui/GoogleSearch.java" />
         <option value="$PROJECT_DIR$/src/test/java/baseClass/UITestBaseClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/helperMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/helpers/helperMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runner/tests.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/baseSetup/UITestBaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/GoogleSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" />
       </list>
     </option>
   </component>
@@ -102,63 +129,111 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="AutomationSolution2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationSolution2" type="462c0819:PsiDirectoryNode" />
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AutomationSolution2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationSolution2" type="462c0819:PsiDirectoryNode" />
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AutomationSolution2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationSolution2" type="462c0819:PsiDirectoryNode" />
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AutomationSolution2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationSolution2" type="462c0819:PsiDirectoryNode" />
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AutomationSolution2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationSolution2" type="462c0819:PsiDirectoryNode" />
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baseSetup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="selectors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AutomationSolution2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationSolution2" type="462c0819:PsiDirectoryNode" />
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Reports" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AutomationSolution2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationSolution2" type="462c0819:PsiDirectoryNode" />
+              <item name="avangarde work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avangarde work" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598380580233" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598456932042" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alina\Desktop\avangarde work\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alina\Desktop\avangarde work\src\main" />
+      <recent name="C:\Users\Alina\Desktop\avangarde work\src\test\java\runner" />
       <recent name="C:\Users\Alina\Desktop\AutomationSolution2\src\test" />
     </key>
   </component>
@@ -175,9 +250,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationSolution2" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/tests.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/java/runner/tests.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -187,7 +262,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" />
+        <item itemvalue="TestNG.C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -205,35 +280,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 20h 39m 32s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 16h 54m 18s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 20h 42m 04s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 16h 54m 58s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 20h 43m 53s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 16h 56m 54s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 20h 57m 26s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 16h 58m 07s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 21h 00m 27s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 16h 59m 52s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 21h 09m 31s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 17h 04m 46s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 21h 14m 14s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 17h 05m 42s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 21h 21m 02s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 17h 08m 22s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 21h 26m 54s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 17h 13m 36s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Alina_Desktop_AutomationSolution2_src_test_resources_tests_xml - 2020.08.25 at 21h 33m 34s.xml">
-      <configuration name="C:/Users/Alina/Desktop/AutomationSolution2/src/test/resources/tests.xml" configurationId="TestNG" />
+    <history-entry file="C__Users_Alina_Desktop_avangarde_work_src_main_java_runner_tests_xml - 2020.08.26 at 17h 17m 15s.xml">
+      <configuration name="C:/Users/Alina/Desktop/avangarde work/src/main/java/runner/tests.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -247,33 +322,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-492" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3033586" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -336,39 +412,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.4/lib/src.zip!/java.base/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/org/openqa/selenium/support/ui/WebDriverWait.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/GoogleSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Reports/report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/GoogleSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selectors/Selectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runner/tests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseSetup/UITestBaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2380#2381#0" expanded="true" />
+            <element signature="e#2429#2430#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/baseClass/UITestBaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/tests.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
